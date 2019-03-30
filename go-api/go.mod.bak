@@ -1,0 +1,3 @@
+module github.com/hikvineh
+
+go 1.12
