@@ -44,6 +44,8 @@ func (r *Router) AttachSubRouterWithMiddleWare(path string, subroutes routes.Rou
 			Name(route.Name).
 			Handler(route.HandlerFunc)
 	}
+
+	return
 }
 
 // NewRouter /
