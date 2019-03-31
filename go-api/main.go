@@ -4,8 +4,8 @@ import (
 	"flag"
 	"os"
 
-	"github.com/hikvineh/go-api/system/app"
-	DB "github.com/hikvineh/go-api/system/db"
+	"github.com/hikvineh/go-api/cmd/system/app"
+	DB "github.com/hikvineh/go-api/cmd/system/db"
 	"github.com/joho/godotenv"
 )
 
