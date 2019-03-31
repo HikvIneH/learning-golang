@@ -31,10 +31,10 @@ func (r *Router) Init() {
 }
 
 // AttachSubRouterWithMiddleWare manage subroutes
-// SubRouter function from gorilla mux
+// Subrouter with small 'r' function from gorilla mux
 func (r *Router) AttachSubRouterWithMiddleWare(path string, subroutes routes.Routes, middleware mux.MiddlewareFunc) (SubRouter *mux.Router) {
 
-	SubRouter = r.Router.PathPrefix(path).SubRouter()
+	SubRouter = r.Router.PathPrefix(path).Subrouter()
 	SubRouter.Use(middleware)
 
 	for _, route := range subroutes {
