@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/gorilla/mux"
-	V1SubRoutes "github.com/hikvineh/go-api/cmd/system/controllers/v1/router"
+	V1SubRoutes "github.com/hikvineh/go-api/cmd/controllers/v1/router"
 	"github.com/hikvineh/go-api/pkg/types/routes"
 )
 
