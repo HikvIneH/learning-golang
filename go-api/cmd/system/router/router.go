@@ -35,7 +35,7 @@ func (r *Router) Init() {
 func (r *Router) AttachSubRouterWithMiddleWare(path string, subroutes routes.Routes, middleware mux.MiddlewareFunc) (SubRouter *mux.Router) {
 
 	SubRouter = r.Router.PathPrefix(path).SubRouter()
-	SubRouter.Use(Middleware)
+	SubRouter.Use(middleware)
 
 	for _, route := range subroutes {
 		SubRouter.
